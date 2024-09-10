@@ -34,3 +34,5 @@ Ce programme en C++ convertit la liste d'adresses IP en un tableau d'octets, pui
 ![inject example](https://github.com/user-attachments/assets/a48505f9-23a8-485f-bbf8-035a6f27a56a)
 
 ---
+
+Pour ceux souhaitant encore plus de détail je vous invite à regarder cette vidéo qui traite du même sujet (mais qui est en anglais) : https://www.youtube.com/watch?v=w35GDs-Xbkc&list=PLRN5X9sO9BDA_bnE-6hbyx_nnpv9-7Muv&index=8
